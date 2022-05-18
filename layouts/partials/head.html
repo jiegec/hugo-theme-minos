@@ -18,6 +18,8 @@
     {{ range .Site.Params.customCss -}}
         <link rel="stylesheet" href="{{ . | absURL }}">
     {{- end }}
+    <script src="{{ "js/wavedrom/default.js" | absURL }}" type="text/javascript"></script>
+    <script src="{{ "js/wavedrom/wavedrom.min.js" | absURL }}" type="text/javascript" /></script>
 
     {{ hugo.Generator }}
 </head>
